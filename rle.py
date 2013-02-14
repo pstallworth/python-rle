@@ -1,13 +1,10 @@
 #!/usr/bin/python
 
-#run length encoding
-
 def encode(mystring):
 
 	count = 1
 	res = ""
 	for i, char in enumerate(mystring):
-		#char = mystring[i]
 		try:
 			if char == mystring[i+1]:
 				count = count + 1
